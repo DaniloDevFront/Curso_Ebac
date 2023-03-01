@@ -1,0 +1,17 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Parcel - utilizada para compilação:\r - Sass, Less\r - JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "parcel": "parcel src/index.html src/styles/main.sass src/scripts/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
