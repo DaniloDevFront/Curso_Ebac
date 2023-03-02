@@ -1,3 +1,4 @@
 Parcel - utilizada para compilação:
-- Sass, Less
-- JavaScript
+- Sass, Less;
+- JavaScript;
+- Simula o liveServer;
