@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.sass">
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <title>Document</title>
 </head>
@@ -12,7 +14,9 @@
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="">
-            <p class="hero__text">O maior evento de tecnologia do Brasil começa em data</p>
+            <p class="hero__text">
+                O maior evento de tecnologia do Brasil começa em <span class="hero__text__data"></span>
+            </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
@@ -32,5 +36,41 @@
             </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, natus quae tempore magnam voluptatibus earum saepe aliquid corporis, quasi odio ipsa impedit a sit ratione repellat iusto, veritatis laudantium?</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, natus quae tempore magnam voluptatibus earum saepe aliquid corporis, quasi odio ipsa impedit a sit ratione repellat iusto, veritatis laudantium?</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, natus quae tempore magnam voluptatibus earum saepe aliquid corporis, quasi odio ipsa impedit a sit ratione repellat iusto, veritatis laudantium?</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, natus quae tempore magnam voluptatibus earum saepe aliquid corporis, quasi odio ipsa impedit a sit ratione repellat iusto, veritatis laudantium?</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="">
+        </div>
+    </section>
 </body>
 </html>

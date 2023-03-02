@@ -1,6 +1,8 @@
+@use '../variaveis'
+
 .infos-bar
     padding: 16px 24px
-    background-color: #fff
+    background-color: variaveis.$bgColorPrimary
     display: flex
     justify-content: space-between
 
@@ -10,12 +12,12 @@
 
         &__item
             font-size: 14px
-            color: #000
+            color: variaveis.$textColorSecundary
 
             b
                 display: block
                 font-size: 18px
-                color: #000
+                color: variaveis.$textColorSecundary
     
     @media (max-width: 640px)
         display: block
