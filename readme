@@ -1,4 +1,17 @@
 Parcel - utilizada para compilação:
+
 - Sass, Less;
 - JavaScript;
 - Simula o liveServer;
+
+Efeitos de transição durante a rolagem da tela usando o plugin AOS:
+
+- Link externo css
+- Link Externo js
+
+Contagem regressiva para o data do evento:
+
+-   const data = new Date() - Para gerar data atual
+-   const dataProg = new Date("02/03/2023") - Para gerar uma data especifica
+-   setInterval(FunctionData, 1000) - Intervalo para chamada da função
+-   clearInterval(setInterval); // Parar a atualização do setInterval

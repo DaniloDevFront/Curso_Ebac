@@ -1,19 +1,19 @@
 AOS.init();
 
-const dataDestino = new Date("03/02/2023 19:00");
+const dataDestino = new Date("03/02/2023");
 
 function atualizaTempoRestante() {
     const dataAtual = new Date();
 
     if (dataAtual >= dataDestino) {
         document.querySelector(".hero__text__data").textContent = "Evento encerrado";
-        clearInterval(intervalo); // Parar a atualização do setInterval
+        clearInterval(setInterval); // Parar a atualização do setInterval
         
         return;
     }
 
-    const difMilissegundos = dataDestino - dataAtual;
-    const segundos = Math.floor(difMilissegundos / 1000);
+    const difMilseg = dataDestino - dataAtual;
+    const segundos = Math.floor(difMilseg / 1000);
     const minutos = Math.floor(segundos / 60);
     const horas = Math.floor(minutos / 60);
     const dias = Math.floor(horas / 24);

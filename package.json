@@ -2,9 +2,9 @@
   "name": "projeto",
   "version": "1.0.0",
   "description": "Parcel - utilizada para compilação:\r - Sass, Less\r - JavaScript",
-  "main": "index.js",
   "scripts": {
-    "parcel": "parcel src/index.html src/styles/main.sass src/scripts/main.js",
+    "dev": "parcel src/index.html src/styles/main.sass src/scripts/main.js",
+    "build":"parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
