@@ -1,0 +1,133 @@
+@use './config/variaveis'
+
+.hero
+    height: 100vh
+    padding-top: 15rem
+    background: url(../images/bgHero3.jpg) no-repeat
+    background-position: center
+    background-size: cover
+    animation: efeitoBg 5s linear infinite
+    @keyframes efeitoBg
+        100%
+            filter: hue-rotate(360deg)
+
+.content
+    width: 90%
+    display: flex
+    justify-content: center
+    padding: 0 36px
+
+    & img
+        position: absolute
+        left: 10rem
+        bottom: 13rem
+
+// Bloco = Date | Location
+.hero__content
+    height: 500px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow-y: hidden
+    backdrop-filter: blur(15px)
+    border: 2px solid #ccc
+
+    &__detail
+        height: 400px
+        width: 45%
+        padding-right: 2.6rem
+        display: flex
+        align-items: center
+        justify-content: end
+        position: relative
+        letter-spacing: -10px
+        font-size: 18rem
+        color: #fff
+
+        &__day
+            font-weight: bold
+            color: #efa506
+
+        &__month
+            position: absolute
+            bottom: 150px
+            right: 14rem
+            font-size: 4rem
+            font-weight: 700
+            letter-spacing: normal
+            text-transform: uppercase
+
+        &__location
+            position: absolute
+            bottom: 40px
+            right: 6rem
+            font-family: Oswald,sans-serif
+            font-size: 1.1rem
+            font-weight: 400
+            letter-spacing: normal
+
+            .icone-local
+                margin-right: 8px
+                font-size: 1rem
+                color: #efa506
+
+    // Bloco = Contagem regressiva | Title | Subtitle //
+    &__details
+        height: 400px
+        width: 45%
+        display: block
+        text-transform: uppercase
+
+        &__timer
+            width: 400px
+            display: flex
+            justify-content: space-between
+
+            & .timer-items
+                display: flex
+                align-items: center
+                color: #fff
+                font-size: 48px
+                font-weight: bold
+
+                &__date
+                    &--data
+                        color: red
+                    &--horas
+                        color: gold
+                    &--minutos
+                        color: blue
+                    &--segundos
+                        color: green
+
+                &__text
+                    width: 30px
+                    font-weight: 300
+                    font-size: 16px
+                    transform: rotate(-90deg)
+                    position: relative
+                    left: -5px
+
+        &__subtitle
+            margin-top: 1.2rem
+            white-space: nowrap
+            font-family: Oswald,sans-serif
+            color: #efa506
+            font-size: 2.8rem
+            font-weight: 300
+            letter-spacing: 0.4rem
+
+        &__title
+            font-family: Oswald,sans-serif
+            color: #fff
+            font-size: 5.5rem
+            font-weight: bold
+
+        .btn-presenca
+            background-color: #efa506
+            text-transform: uppercase
+            color: #fff
+            display: block
+            width: 50%
+            margin-top: 1.6rem

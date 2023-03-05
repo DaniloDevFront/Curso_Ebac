@@ -1,0 +1,28 @@
+@use './components/buttons'
+@use 'hero'
+@use './config/variaveis'
+@use './config/mixins'
+@use './config/mediaQuery'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: Poppins,sans-serif
+
+.container
+    max-width: 1366px
+    width: 100%
+    margin: 0 auto
+
+    @media (max-width: 640px)
+        max-width: 80%
+    
+    @media (max-width: 1024px)
+        max-width: 90%
+
+    // color: #efa506
+
+
